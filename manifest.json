@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Jet-X",
+  "description": "Facilita a interação dos atendentes com o chatbot da Jet Sales.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
